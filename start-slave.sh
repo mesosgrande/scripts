@@ -1,9 +1,8 @@
 docker run \
   --privileged=true \
-  --link zookeeper:zookeeper \
   -d \
   -e MESOS_LOG_DIR=/var/log \
-  -e MESOS_MASTER=zk://zookeeper:2181/mesos \
+  -e MESOS_MASTER=zk://172.17.35.196:2181/mesos \
   -e MESOS_CONTAINERIZERS=docker,mesos \
   -p 5052:5051 \
   -v $(which docker):$(which docker) \
