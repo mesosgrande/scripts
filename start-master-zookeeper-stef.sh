@@ -1,7 +1,6 @@
 #!/bin/bash
 docker run \
   --name master \
-  --link zookeeper:zookeeper \
   -d \
   -e MESOS_QUORUM=1 \
   -e MESOS_LOG_DIR=/var/log \
