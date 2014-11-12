@@ -1,4 +1,4 @@
 #!/bin/bash
-bash start-master.sh
+bash start-master-zookeeper-stef.sh
 bash start-slave.sh
 bash start-marathon.sh
